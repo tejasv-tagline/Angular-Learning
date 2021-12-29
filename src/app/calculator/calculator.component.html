@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="container11">
+        <div class="col-md-2"></div>
+        <div class="container col-md-8">
+          <div class="resultbox">
+            <input type="text" class="screen" name="result" id="result" disabled>
+          </div>
+          <div class="row1">
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('1')">1</button>
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('2')">2</button>
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('3')">3</button>
+            <button type="submit" class="btn btn-warning m-5px" (click)="btnunique('+')">+</button>
+          </div>
+          <div class="row1">
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('4')">4</button>
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('5')">5</button>
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('6')">6</button>
+            <button type="submit" class="btn btn-warning m-5px" (click)="btnunique('-')">-</button>
+          </div>
+          <div class="row1">
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('7')">7</button>
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('8')">8</button>
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('9')">9</button>
+            <button type="submit" class="btn btn-warning m-5px" (click)="btnunique('*')">x</button>
+          </div>
+          <div class="row1">
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('0')">0</button>
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('00')">00</button>
+            <button type="submit" class="btn btn-primary m-5px" (click)="btnunique('.')">.</button>
+            <button type="submit" class="btn btn-warning m-5px" (click)="btnunique('/')">/</button>
+          </div>
+          <div class="lastbutton row1">
+            <button type="submit" class="setbutton btn btn-danger " style="margin:5px"
+              (click)="calculation('clear')">AC</button>
+            <button type="submit" class="setbutton btn btn-secondary " style="margin:5px"
+              (click)="calculation('b')">⌫</button>
+            <button type="submit" class="setbutton btn btn-success" style="margin:5px"
+              (click)="calculation('equation')">=</button>
+          </div>
+  
+  
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  
+  
