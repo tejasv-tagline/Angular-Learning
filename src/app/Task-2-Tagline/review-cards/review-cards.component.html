@@ -1,13 +1,15 @@
-<div class="c-cards m-2 shadow p-3 mb-5 rounded" >
+<div class="c-cards m-2 shadow p-3 mb-5 rounded">
     <div class="card-body">
         <p>
             <app-five-star></app-five-star>
         </p>
         <p class="card-text">
-            <app-review-cards-text></app-review-cards-text>
+            <!-- <app-review-cards-text ></app-review-cards-text> -->
+            {{reviewtext}}
         </p>
-        <p class="card-text text-muted">
-            <app-card-writer></app-card-writer>
+        <p class="card-text text-muted c-text-small">
+            <!-- <app-card-writer></app-card-writer> -->
+            {{reviewwriter}}
         </p>
     </div>
 </div>

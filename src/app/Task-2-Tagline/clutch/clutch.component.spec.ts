@@ -8,9 +8,8 @@ describe('ClutchComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ClutchComponent ]
-    })
-    .compileComponents();
+      declarations: [ClutchComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -6,8 +6,13 @@
 <app-header></app-header>
 <!-- Header end -->
 
+<!-- cover photo start -->
 <app-cover-photo></app-cover-photo>
+<!-- cover photo end -->
+
+<!-- Description cards section start -->
 <div class="c-app-card-header pt-5" *ngIf="true">
+    <p [ngStyle]="{'color': isBlue ? 'blue' : '#fd8639'}" class="text-center"> Our Services</p>
     <app-card-header></app-card-header>
 </div>
 <div class="row m-0">
@@ -15,82 +20,39 @@
     <div class="col-sm-10">
         <div class="d-flex flex-wrap justify-content-center">
             <div *ngFor="let item of items">
-                <app-cards [title]="item.title"></app-cards>
+                <app-cards [photo]="item.photo" [title]="item.title" [text]="item.text" [button]="item.button">
+                </app-cards>
             </div>
         </div>
     </div>
     <div class="col-sm-1"></div>
 </div>
+<!-- Description cards section end -->
 
 <hr class="m-auto w-25"><br><br>
 
+<!-- common button for every start -->
 <div class="button text-center">
-    <app-button></app-button>
+    <app-button class="c-btn-orange" [button]="button"></app-button>
 </div>
-<!-- <app-card-header></app-card-header> -->
+<!-- common button for every end -->
+
+<!-- technologies photo section start -->
 <app-tech-header></app-tech-header>
 <div class="row m-0">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
         <div class="d-flex flex-wrap justify-content-center">
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
+            <div *ngFor="let tech of technologies">
+                <app-technologies [photo]="tech.photo"></app-technologies>
             </div>
         </div>
     </div>
     <div class="col-sm-1"></div>
 </div>
+<!-- technologies photo section End -->
+
+<!-- Experience section start -->
 <div class="experience mt-2 text-white">
     <div class="row m-0 pt-3">
         <div class="col-sm-1"></div>
@@ -102,96 +64,44 @@
     <div class="row m-0">
         <div class="col-sm-1"></div>
         <div class="col-sm-10 d-flex justify-content-center flex-wrap">
-            <app-expirience></app-expirience>
-            <app-expirience></app-expirience>
-            <app-expirience></app-expirience>
-            <app-expirience></app-expirience>
+            <div *ngFor="let emps of emp">
+                <app-expirience [employee]="emps.employee" [degree]="emps.degree"></app-expirience>
+            </div>
         </div>
         <div class="col-sm-1"></div>
     </div>
 </div>
+<!-- Experience section end -->
+
+<!-- App review(quotes) section start -->
 <div class="row m-0 mt-5">
     <div class="col-sm-5">
         <app-clutch></app-clutch>
     </div>
     <div class="col-sm-7 c-bg-secondary d-flex  flex-wrap justify-content-center p-2">
-        <app-review-cards></app-review-cards>
-        <app-review-cards></app-review-cards>
-        <app-review-cards></app-review-cards>
-        <app-review-cards></app-review-cards>
-        <app-review-cards></app-review-cards>
-        <app-review-cards></app-review-cards>
+        <div *ngFor="let quote of quotes">
+            <app-review-cards [reviewtext]="quote.reviewtext" [reviewwriter]="quote.reviewwriter"></app-review-cards>
+        </div>
     </div>
 </div>
+<!-- App review(quotes) section end -->
+
+<!-- Another technologies photos section start -->
 <app-tech-header></app-tech-header>
 <div class="row m-0">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
         <div class="d-flex flex-wrap justify-content-center">
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
-            </div>
-            <div class="m-3">
-                <app-technologies></app-technologies>
+            <div *ngFor="let client of clients">
+                <app-technologies [photo]="client.photo"></app-technologies>
             </div>
         </div>
     </div>
     <div class="col-sm-1"></div>
 </div>
+<!-- Another technologies photos section end -->
+
+<!-- Grow section start -->
 <div class="row m-0 c-bg-secondary-orange">
     <div class="col-sm-4">
         <app-slide-text></app-slide-text>
@@ -204,27 +114,33 @@
     <app-grow></app-grow>
 </div>
 <div class="row m-0 mt-5 p-5">
+    <p *ngIf="true" class="custom-font text-center">{{clientsay}}</p>
     <div class="col-sm-6 d-flex justify-content-center align-items-center">
         <app-quoteimage></app-quoteimage>
     </div>
-    <div class="col-sm-6 p-4 shadow p-3 mb-5 bg-white rounded">
-        <app-quote></app-quote>
+    <div class="col-sm-6 p-4">
+        <div class=" shadow p-3 mb-5 bg-white rounded">
+            <app-quote></app-quote>
+        </div>
     </div>
 </div>
+<!-- Grow section end -->
 
+<!-- Blogs section starts -->
 <app-tech-header></app-tech-header>
 <div class="row m-0">
     <div class="col-sm-1"></div>
     <div class="col-sm-10 d-flex justify-content-center flex-wrap">
-        <app-blogs></app-blogs>
-        <app-blogs></app-blogs>
-        <app-blogs></app-blogs>
-        <app-blogs></app-blogs>
+        <div *ngFor="let blog of blogs">
+            <app-blogs [photo]="blog.photo" [title]="blog.title" [text]="blog.text" [footer]="blog.footer"></app-blogs>
+        </div>
     </div>
     <div class="col-sm-1"></div>
 </div>
+<!-- Blogs section end -->
 
-<div class="row m-0">
+
+<!-- <div class="row m-0">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
         <div class="row m-0 bg-info">
@@ -238,5 +154,5 @@
         </div>
     </div>
     <div class="col-sm-1"></div>
-</div>
+</div> -->
 <router-outlet></router-outlet>

@@ -8,9 +8,8 @@ describe('QuoteimageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ QuoteimageComponent ]
-    })
-    .compileComponents();
+      declarations: [QuoteimageComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

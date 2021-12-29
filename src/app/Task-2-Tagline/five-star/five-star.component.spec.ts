@@ -8,9 +8,8 @@ describe('FiveStarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FiveStarComponent ]
-    })
-    .compileComponents();
+      declarations: [FiveStarComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

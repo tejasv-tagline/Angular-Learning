@@ -1,10 +1,10 @@
 <div class="card c-cards m-4 shadow p-3 mb-5 bg-white rounded">
-    <img class="card-img-top" [src]="cardTopimage" alt="Card image cap">
+    <img class="card-img-top" src="{{photo}}" alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title">{{cardTitle}}</h5>
-        <p class="card-text">{{cardText}}</p>
-        <div class="card-footer text-muted">
-            {{cardFooter}}
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text c-text-little-small">{{text}}</p>
+        <div class="card-footer text-orange d-flex justify-content-between">
+            {{footer}} <span><i class="fas fa-user-graduate"></i></span>
         </div>
     </div>
 </div>
