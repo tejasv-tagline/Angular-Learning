@@ -17,8 +17,8 @@ export interface Empdegree {
 }
 
 export interface Quotes {
-  reviewtext: string;
-  reviewwriter: string;
+  reviewText: string;
+  reviewWriter: string;
 }
 
 export interface Blogs {
@@ -111,6 +111,7 @@ export class AppComponent {
         'https://icon2.cleanpng.com/20180805/xwk/kisspng-logo-java-runtime-environment-programming-language-java-util-concurrentmodificationexception-%C3%96mer-5b6766aaf21ab4.3339227715335031469917.jpg',
     },
   ];
+
   public blogs: Blogs[] = [
     {
       photo:
@@ -144,32 +145,32 @@ export class AppComponent {
 
   public quotes: Quotes[] = [
     {
-      reviewtext:
+      reviewText:
         '"They understand complex technical requirements, and they have a team that quickly gets up to speed."',
-      reviewwriter: 'Founder, Cimpro.io',
+      reviewWriter: 'Founder, Cimpro.io',
     },
     {
-      reviewtext:
+      reviewText:
         '"What I appreciate the most out of our relationship with TaglineInfotech is their commitment."',
-      reviewwriter: 'Co-Founder & CTO, Sports & Activities Management Platform',
+      reviewWriter: 'Co-Founder & CTO, Sports & Activities Management Platform',
     },
     {
-      reviewtext:
+      reviewText:
         '"They are fulfilling my requirements over the long term and that was what we were looking for."',
-      reviewwriter: 'President, Bomhof Integrated',
+      reviewWriter: 'President, Bomhof Integrated',
     },
     {
-      reviewtext: `"We loved that they went above and beyond to improve the tasks that we didn't even notice had issues."`,
-      reviewwriter: 'Frontend Developer, Web Dev & Design Company',
+      reviewText: `"We loved that they went above and beyond to improve the tasks that we didn't even notice had issues."`,
+      reviewWriter: 'Frontend Developer, Web Dev & Design Company',
     },
     {
-      reviewtext:
+      reviewText:
         '"The team takes up new challenges and finishes the project on time."',
-      reviewwriter: 'Software Architect, Specialty Finance Company',
+      reviewWriter: 'Software Architect, Specialty Finance Company',
     },
     {
-      reviewtext: `"We are getting close to launch now and it's been a tremendous help to have their developers on my team."`,
-      reviewwriter: 'Owner, e-Commerce Support Company',
+      reviewText: `"We are getting close to launch now and it's been a tremendous help to have their developers on my team."`,
+      reviewWriter: 'Owner, e-Commerce Support Company',
     },
   ];
 
@@ -179,8 +180,9 @@ export class AppComponent {
     { employee: '100k +', degree: 'Freelance Hours' },
     { employee: '5 +', degree: 'Years Of Experience' },
   ];
+  public isBlue="red";
   public button: string = 'Contact Us';
-  public clientsay:string="What's Our Client Say"
+  public clientSay:string="What's Our Client Say"
   public clients: Technologies[] = [
     {
       photo:

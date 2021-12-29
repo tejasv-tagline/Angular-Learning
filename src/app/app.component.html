@@ -11,7 +11,7 @@
 <!-- cover photo end -->
 
 <!-- Description cards section start -->
-<div class="c-app-card-header pt-5" *ngIf="true">
+<div class="pt-5" *ngIf="true">
     <p [ngStyle]="{'color': isBlue ? 'blue' : '#fd8639'}" class="text-center"> Our Services</p>
     <app-card-header></app-card-header>
 </div>
@@ -80,7 +80,7 @@
     </div>
     <div class="col-sm-7 c-bg-secondary d-flex  flex-wrap justify-content-center p-2">
         <div *ngFor="let quote of quotes">
-            <app-review-cards [reviewtext]="quote.reviewtext" [reviewwriter]="quote.reviewwriter"></app-review-cards>
+            <app-review-cards [reviewText]="quote.reviewText" [reviewWriter]="quote.reviewWriter"></app-review-cards>
         </div>
     </div>
 </div>
@@ -114,7 +114,7 @@
     <app-grow></app-grow>
 </div>
 <div class="row m-0 mt-5 p-5">
-    <p *ngIf="true" class="custom-font text-center">{{clientsay}}</p>
+    <p *ngIf="true" class="custom-font text-center">{{clientSay}}</p>
     <div class="col-sm-6 d-flex justify-content-center align-items-center">
         <app-quoteimage></app-quoteimage>
     </div>

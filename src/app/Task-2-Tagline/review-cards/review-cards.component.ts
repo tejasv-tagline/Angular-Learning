@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./review-cards.component.scss'],
 })
 export class ReviewCardsComponent implements OnInit {
-  @Input() reviewtext: string = '';
-  @Input() reviewwriter: string = '';
+  @Input() reviewText: string = '';
+  @Input() reviewWriter: string = '';
   
   constructor() {}
 
