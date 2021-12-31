@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tech-header',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tech-header.component.scss'],
 })
 export class TechHeaderComponent implements OnInit {
-  public techHeading: string = 'Our Technologies';
+  @Input() techHeading: string = 'Welcome Here';
+
   constructor() {}
 
   ngOnInit(): void {}

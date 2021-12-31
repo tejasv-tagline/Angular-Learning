@@ -31,6 +31,7 @@ export interface Blogs {
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+ 
 })
 export class AppComponent {
   public items: Items[] = [
@@ -180,9 +181,10 @@ export class AppComponent {
     { employee: '100k +', degree: 'Freelance Hours' },
     { employee: '5 +', degree: 'Years Of Experience' },
   ];
-  public isBlue="red";
+  public isBlue = 'red';
   public button: string = 'Contact Us';
-  public clientSay:string="What's Our Client Say"
+  public clientSay: string = "What's Our Client Say";
+  public trueOrFalse:boolean=true;
   public clients: Technologies[] = [
     {
       photo:
@@ -216,11 +218,26 @@ export class AppComponent {
       photo:
         'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-7.png',
     },
-    { photo: 'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-8.png' },
-    { photo: 'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-9.png' },
-    { photo: 'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-10.png ' },
-    { photo: 'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-11.png' },
-    { photo: 'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-12.png' },
+    {
+      photo:
+        'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-8.png',
+    },
+    {
+      photo:
+        'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-9.png',
+    },
+    {
+      photo:
+        'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-10.png ',
+    },
+    {
+      photo:
+        'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-11.png',
+    },
+    {
+      photo:
+        'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-12.png',
+    },
     {
       photo:
         'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-13.png',
@@ -236,6 +253,9 @@ export class AppComponent {
     {
       photo:
         'https://taglineinfotech.com/wp-content/uploads/2021/01/client-logo-16.png',
-    }
+    },
   ];
+
+
 }
+

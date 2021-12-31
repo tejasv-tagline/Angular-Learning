@@ -27,6 +27,9 @@ import { QuoteComponent } from './Task-2-Tagline/quote/quote.component';
 import { BlogsComponent } from './Task-2-Tagline/blogs/blogs.component';
 import { FormtextComponent } from './Task-2-Tagline/formtext/formtext.component';
 import { FormComponent } from './Task-2-Tagline/form/form.component';
+import { ParentLifeComponent } from './Task-3-lifecycle/parent-life/parent-life.component';
+import { ChildLifeComponent } from './Task-3-lifecycle/child-life/child-life.component';
+
 
 
 @NgModule({
@@ -55,7 +58,10 @@ import { FormComponent } from './Task-2-Tagline/form/form.component';
     QuoteComponent,
     BlogsComponent,
     FormtextComponent,
-    FormComponent
+    FormComponent,
+    ParentLifeComponent,
+    ChildLifeComponent,
+
   ],
   imports: [
     BrowserModule,

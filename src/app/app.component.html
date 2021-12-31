@@ -2,17 +2,19 @@
 <!-- <app-calculator></app-calculator> -->
 <!-- Calculator task end -->
 
-<!-- Header start -->
+<!-- Task 2 - Tagline Website start -->
+<!-- Header start
 <app-header></app-header>
-<!-- Header end -->
+Header end
 
-<!-- cover photo start -->
+cover photo start
 <app-cover-photo></app-cover-photo>
-<!-- cover photo end -->
+cover photo end
 
-<!-- Description cards section start -->
+Description cards section start
 <div class="pt-5" *ngIf="true">
-    <p [ngStyle]="{'color': isBlue ? 'blue' : '#fd8639'}" class="text-center"> Our Services</p>
+
+    <p class="text-center text-orange"> Our Services</p>
     <app-card-header></app-card-header>
 </div>
 <div class="row m-0">
@@ -27,17 +29,17 @@
     </div>
     <div class="col-sm-1"></div>
 </div>
-<!-- Description cards section end -->
+Description cards section end
 
 <hr class="m-auto w-25"><br><br>
 
-<!-- common button for every start -->
+common button for every start
 <div class="button text-center">
     <app-button class="c-btn-orange" [button]="button"></app-button>
 </div>
-<!-- common button for every end -->
+common button for every end
 
-<!-- technologies photo section start -->
+technologies photo section start
 <app-tech-header></app-tech-header>
 <div class="row m-0">
     <div class="col-sm-1"></div>
@@ -50,9 +52,9 @@
     </div>
     <div class="col-sm-1"></div>
 </div>
-<!-- technologies photo section End -->
+technologies photo section End
 
-<!-- Experience section start -->
+Experience section start
 <div class="experience mt-2 text-white">
     <div class="row m-0 pt-3">
         <div class="col-sm-1"></div>
@@ -71,9 +73,9 @@
         <div class="col-sm-1"></div>
     </div>
 </div>
-<!-- Experience section end -->
+Experience section end
 
-<!-- App review(quotes) section start -->
+App review(quotes) section start
 <div class="row m-0 mt-5">
     <div class="col-sm-5">
         <app-clutch></app-clutch>
@@ -84,9 +86,9 @@
         </div>
     </div>
 </div>
-<!-- App review(quotes) section end -->
+App review(quotes) section end
 
-<!-- Another technologies photos section start -->
+Another technologies photos section start
 <app-tech-header></app-tech-header>
 <div class="row m-0">
     <div class="col-sm-1"></div>
@@ -99,9 +101,9 @@
     </div>
     <div class="col-sm-1"></div>
 </div>
-<!-- Another technologies photos section end -->
+Another technologies photos section end
 
-<!-- Grow section start -->
+Grow section start
 <div class="row m-0 c-bg-secondary-orange">
     <div class="col-sm-4">
         <app-slide-text></app-slide-text>
@@ -114,7 +116,7 @@
     <app-grow></app-grow>
 </div>
 <div class="row m-0 mt-5 p-5">
-    <p *ngIf="true" class="custom-font text-center">{{clientSay}}</p>
+    <p *ngIf="trueOrFalse" class="custom-font text-center">{{clientSay}}</p>
     <div class="col-sm-6 d-flex justify-content-center align-items-center">
         <app-quoteimage></app-quoteimage>
     </div>
@@ -124,9 +126,9 @@
         </div>
     </div>
 </div>
-<!-- Grow section end -->
+Grow section end
 
-<!-- Blogs section starts -->
+Blogs section starts
 <app-tech-header></app-tech-header>
 <div class="row m-0">
     <div class="col-sm-1"></div>
@@ -137,22 +139,17 @@
     </div>
     <div class="col-sm-1"></div>
 </div>
-<!-- Blogs section end -->
+Blogs section end
+
+Task 2 - Tagline Website end -->
 
 
-<!-- <div class="row m-0">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-        <div class="row m-0 bg-info">
-            <div class="col-sm-6 d-flex align-items-center">
-                <app-formtext></app-formtext>
-            </div>
-            <div class="col-sm-6">
-                <app-card-header></app-card-header>
-                <app-form></app-form>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-1"></div>
-</div> -->
+
+<!-- Task 3 Lifecycle hooks start -->
+
+<!-- <app-parent-lifecycle></app-parent-lifecycle> -->
+<app-parent-life></app-parent-life>
+
+<!-- Task 3 Lifecycle hooks end -->
+
 <router-outlet></router-outlet>

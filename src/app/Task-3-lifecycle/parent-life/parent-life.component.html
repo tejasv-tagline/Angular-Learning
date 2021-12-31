@@ -1,0 +1,5 @@
+<p>parent-life works!</p>
+<button (click)="toggle()">Hide/show content</button>
+<app-child-life *ngIf="displayChild" [message]="childMessage"></app-child-life>
+
+<button (click)="childMessage = 'welcome'" >Change Input for child</button>
